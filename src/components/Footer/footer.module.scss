@@ -1,0 +1,88 @@
+.footer{
+    footer{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 95%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding: 3rem;
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-bottom: 3rem;
+            gap: 6rem;
+
+            .left{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 3.2rem;
+
+                    li{
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 178.19%;
+                        color: #70737C;
+                    }
+
+                    .border{
+                        border: 1px solid #4FA083;
+                        transform: rotate(90deg);
+                        width: 1rem;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 3.6rem;
+
+                    li{
+                        font-family: 'Lexend';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 178.19%;
+                        color: #70737C;
+                    }
+
+                    .border{
+                        border: 1px solid #4FA083;
+                        transform: rotate(90deg);
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+
+        .border{
+            opacity: 0.3;
+            border: 1px solid #359740;
+        }
+
+        .bottom{
+            display: flex;
+            align-items: center;
+
+            .icon{
+                display: flex;
+                align-items: center;
+                i{
+                    
+                }
+            }
+        }
+    }
+}
