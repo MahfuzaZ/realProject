@@ -28,3 +28,13 @@ html{
 .active{
   color: #359740 !important;
 }
+
+.right{
+   right: 0 !important;
+}
+
+
+.dark{
+  background-color: #000 !important;
+  color: #fff !important;
+}

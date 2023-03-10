@@ -10,6 +10,7 @@
         justify-content: space-between;
         padding: 2rem;
 
+
  
         .logo{
             width: 10rem;
@@ -27,6 +28,10 @@
                     font-size: 14px;
                     line-height: 178.19%;
                     color: #70737C;
+
+                    &:hover{
+                        color: #359740;
+                    }
                 }
 
                 .border{
@@ -34,6 +39,117 @@
                     transform: rotate(90deg);
                     width: 1rem;
                 }
+            }
+        }
+
+        .menu2{
+            position: fixed;
+            right: -100%;
+            top: 0rem;
+            background-color: #fff;
+            transition: .6s;
+            z-index: 100;
+            width: 60%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -6px 4px 41px rgba(0, 0, 0, 0.25);
+            ul{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1.6rem;
+
+                a{
+                    font-family: 'Lexend';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 178.19%;
+                    letter-spacing: -0.035em;
+                    color: #1F2533;
+                }
+
+                .border{
+                    border: 1px solid #EFEFEF;
+                    width: 15rem;
+                    
+
+                }
+            }
+
+            .xmark{
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+
+                i{
+                    font-size: 2.5rem;
+                    color: #000;
+                }
+            }
+
+        }
+
+        .smooth{
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 6.35rem;
+            right: -100%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(2px);
+            z-index: 90;
+            transition: .6;
+        }
+
+        .bar{
+            display: none;
+        }
+
+
+    }
+}
+
+.right{
+    right: 0 !important;
+}
+
+
+@media (max-width: 960px) {
+    .header{
+        header{
+            .menu{
+                display: none;
+            }
+            .bar{
+                display: block;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 460px) {
+    .header{
+        header{
+            .menu2{
+                ul{
+                    a{
+                        font-size: 1.4rem;
+                    }
+
+                    .border{
+                       border: .3px solid #fff;
+                       width: 80%;
+                    }
+
+                }
+            }
+            .bar{
+                display: block;
             }
         }
     }

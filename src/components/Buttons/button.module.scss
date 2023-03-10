@@ -1,0 +1,48 @@
+
+.green{
+    background: #359740;
+    border-radius: 8px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    // line-height: 178.19%;
+    letter-spacing: -0.035em;
+    padding: 1.5rem 5rem;
+    color: #FFFFFF;
+
+
+    &:hover{
+        background-color: #fff;
+        color: #359740;
+        border: #359740 1px solid;
+    }
+}
+
+.white{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    // line-height: 178.19%;
+    letter-spacing: -0.035em;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 1.5rem 5rem;
+    color: #359740;
+
+    &:hover{
+        background-color: #359740;
+        color: #fff;
+    }
+}
+
+button{
+    background-color: #fff;
+    color: #359740;
+    // border: 1px solid #359740;
+}
+
+.border{
+    border: #359740 1px solid;
+}

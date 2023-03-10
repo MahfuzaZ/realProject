@@ -2,22 +2,24 @@ import React from 'react'
 import sass from './footer.module.scss'
 import logo from '../../pages/Img/logo.svg'
 import { Link } from 'react-router-dom'
+import { useMode } from '../../utils/Zustand'
 function Footer() {
+  const theme = useMode((state) => state.mode);
   return (
-    <div className={sass.footer}>
+    <div className={`${theme} ${sass.footer}`}>
         <footer>
            <div className={sass.top}>
            <div className={sass.left}>
               <ul>
-                 <Link to={'/about'}>
+                 <Link className={`${theme} ${sass.a}`} to={'/about'}>
                   <li>About</li>
                  </Link>
                  <div className={sass.border}></div>
-                 <Link to={'/products'}>
+                 <Link  className={`${theme} ${sass.a}`}  to={'/products'}>
                   <li>All Products</li>
                  </Link>
                  <div className={sass.border}></div>
-                 <Link to={'/categories'}>
+                 <Link  className={`${theme} ${sass.a}`}  to={'/categories'}>
                   <li>Categories</li>
                  </Link>
               </ul>
@@ -27,15 +29,15 @@ function Footer() {
            </div>
            <div className={sass.right}>
            <ul>
-                 <Link to={'/comments'}>
+                 <Link className={`${theme} ${sass.a}`}  to={'/comments'}>
                   <li>Comments</li>
                  </Link>
                  <div className={sass.border}></div>
-                 <Link to={'/login'}>
+                 <Link className={`${theme} ${sass.a}`}  to={'/login'}>
                   <li>Login</li>
                  </Link>
                  <div className={sass.border}></div>
-                 <Link to={'/contact'}>
+                 <Link className={`${theme} ${sass.a}`}  to={'/contact'}>
                   <li>Contacts</li>
                  </Link>
               </ul>
@@ -44,12 +46,12 @@ function Footer() {
            <div className={sass.border}></div>
            <div className={sass.bottom}>
                <div className={sass.icon}>
-               <i class="fa-brands fa-instagram"></i>
-               <i class="fa-brands fa-facebook"></i>
-               <i class="fa-brands fa-telegram"></i>
+                <Link  className={`${theme} ${sass.a}`}  to={''}>  <i class="fa-brands fa-instagram"></i></Link>
+                <Link  className={`${theme} ${sass.a}`}  to={''}> <i class="fa-brands fa-facebook"></i></Link>
+                <Link  className={`${theme} ${sass.a}`}  to={''}>  <i class="fa-brands fa-telegram"></i></Link>
                </div>
                <div className={sass.text}>
-                 <h3>All rights reserved</h3>
+                 <h3 className={`${theme} ${sass.h3}`} >All rights reserved</h3>
                </div>
            </div>
         </footer>
